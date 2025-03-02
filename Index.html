@@ -11,7 +11,7 @@
             font-family: 'Orbitron', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #4f46e5, #9333ea, #ff00ff);
+            background: linear-gradient(135deg, #0C223F, #E65300);
             color: white;
             text-align: center;
             overflow-x: hidden;
@@ -24,47 +24,46 @@
 
         /* Hero Section */
         .hero {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
-            padding-bottom: 40px;
+            padding-bottom: 50px;
             position: relative;
             z-index: 2;
         }
 
         .title {
-            font-size: 38px;
+            font-size: 40px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            text-shadow: 0 0 12px rgba(255, 165, 0, 0.8);
         }
 
         .subtitle {
             font-size: 18px;
-            margin-top: 10px;
+            margin-top: 12px;
             opacity: 0.9;
         }
 
         .button {
-            margin-top: 15px;
-            padding: 12px 24px;
-            font-size: 16px;
+            margin-top: 20px;
+            padding: 14px 26px;
+            font-size: 18px;
             font-weight: bold;
-            background: #fff;
-            color: #4f46e5;
-            border: none;
-            border-radius: 10px;
+            background: #E65300;
+            color: white;
+            border: 3px solid white;
+            border-radius: 12px;
             cursor: pointer;
-            transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-            position: relative;
-            z-index: 3;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 0 15px rgba(230, 83, 0, 0.8);
         }
 
         .button:hover {
-            background: #ff00ff;
-            color: white;
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+            background: white;
+            color: #0C223F;
+            border: 3px solid #E65300;
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.9);
             transform: scale(1.05);
         }
 
@@ -72,8 +71,8 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+            gap: 25px;
+            margin-top: 35px;
             max-width: 900px;
             margin: 0 auto;
             position: relative;
@@ -81,23 +80,24 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             color: white;
-            padding: 20px;
+            padding: 22px;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-            transition: 0.3s;
+            box-shadow: 0 0 12px rgba(255, 165, 0, 0.6);
+            transition: 0.3s ease-in-out;
+            border: 2px solid #E65300;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.9);
         }
 
         .emoji {
             font-size: 50px;
-            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+            filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.9));
         }
 
         .card-title {
@@ -108,11 +108,11 @@
 
         .card-desc {
             font-size: 14px;
-            opacity: 0.8;
+            opacity: 0.9;
         }
 
-        /* Floating Particles */
-        .stars {
+        /* Floating Tech Orbs */
+        .orbs {
             position: absolute;
             top: 0;
             left: 0;
@@ -123,33 +123,32 @@
             pointer-events: none;
         }
 
-        .star {
+        .orb {
             position: absolute;
-            background: white;
-            width: 3px;
-            height: 3px;
-            opacity: 0.7;
+            background: rgba(255, 165, 0, 0.8);
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
-            animation: twinkle 5s infinite alternate;
+            animation: float 8s infinite alternate ease-in-out;
         }
 
-        @keyframes twinkle {
-            0% { opacity: 0.2; transform: translateY(0); }
-            100% { opacity: 1; transform: translateY(10px); }
+        @keyframes float {
+            0% { transform: translateY(0) translateX(0); opacity: 0.5; }
+            100% { transform: translateY(-30px) translateX(20px); opacity: 1; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Floating Stars Effect -->
-    <div class="stars"></div>
+    <!-- Floating Tech Orbs -->
+    <div class="orbs"></div>
 
     <div class="container">
         <!-- Hero Section -->
         <div class="hero">
             <h1 class="title">Welcome to Tech Fest 2025</h1>
             <p class="subtitle">
-                Join us for an exciting event featuring a Python Quiz Competition, Web Development Workshop, Build-A-Thon, and an AI Panel Discussion!
+                Experience innovation with a Python Quiz, Web Dev Workshop, Build-A-Thon, and AI Panel Discussion!
             </p>
             <button class="button">Register Now</button>
         </div>
@@ -165,13 +164,13 @@
             <div class="card">
                 <div class="emoji">🌐</div>
                 <h2 class="card-title">Web Dev Workshop</h2>
-                <p class="card-desc">Learn modern web development!</p>
+                <p class="card-desc">Learn cutting-edge web development!</p>
             </div>
 
             <div class="card">
                 <div class="emoji">🚀</div>
                 <h2 class="card-title">Build-A-Thon</h2>
-                <p class="card-desc">Compete to build the best project!</p>
+                <p class="card-desc">Showcase your creativity!</p>
             </div>
 
             <div class="card">
@@ -183,16 +182,16 @@
     </div>
 
     <script>
-        // Generate Random Stars for Background
+        // Generate Floating Orbs
         document.addEventListener("DOMContentLoaded", function() {
-            const starContainer = document.querySelector(".stars");
-            for (let i = 0; i < 100; i++) {
-                let star = document.createElement("div");
-                star.classList.add("star");
-                star.style.top = Math.random() * 100 + "vh";
-                star.style.left = Math.random() * 100 + "vw";
-                star.style.animationDuration = Math.random() * 2 + 3 + "s";
-                starContainer.appendChild(star);
+            const orbContainer = document.querySelector(".orbs");
+            for (let i = 0; i < 30; i++) {
+                let orb = document.createElement("div");
+                orb.className = "orb";
+                orb.style.left = `${Math.random() * 100}vw`;
+                orb.style.top = `${Math.random() * 100}vh`;
+                orb.style.animationDuration = `${Math.random() * 6 + 4}s`;
+                orbContainer.appendChild(orb);
             }
         });
     </script>
