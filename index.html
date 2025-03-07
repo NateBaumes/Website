@@ -7,34 +7,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+<!-- Floating Tech Orbs -->
+<div class="orbs"></div>
+<script>
+    // Generate Floating Orbs
+    document.addEventListener("DOMContentLoaded", function() {
+        const orbContainer = document.querySelector(".orbs");
+        for (let i = 0; i < 30; i++) {
+            let orb = document.createElement("div");
+            orb.className = "orb";
+            orb.style.left = `${Math.random() * 100}vw`;
+            orb.style.top = `${100}vh`;
+            orb.style.animationDuration = `${Math.random() * 6 + 4}s`;
+            orbContainer.appendChild(orb);
+        }
+    });
+</script>
+
 <body>
 
-    <!-- Floating Tech Orbs -->
-    <div class="orbs"></div>
-
     <div class="container">
-        <div class="hero">
-            <h1 class="title">Welcome to Tech Horizon 2025</h1>
+        <div class="nav-bar">
             <p class="subtitle">
-                Experience innovation with a Python Quiz, Web Dev Workshop, Build-A-Thon, and AI Panel Discussion!
+                Utica University's Computer Science Department Represents
             </p>
-            <button class="button">Register Now</button>
+        </div>
+        <div class="hero">
+            <h1 class="title">TechHorizonU'25</h1>
+            <p class="subtitle">
+                Innovating the Future of Technology at Utica University
+            </p>
         </div>
 
         <!--- Event Highlights -->
-        <div class="grid">
+        <div class="card-grid">
             <a href="python-quiz.html" class="card">
                 <h2 class="card-title">PyQuest: The Ultimate Python Challenge</h2>
                 <p class="card-desc">Test your Python skills!</p>
             </a>
 
             <a href="web-dev-workshop.html" class="card">
-                <h2 class="card-title">Web Dev Workshop</h2>
+                <h2 class="card-title">CodeCrafters: Innovate & Create. Workshop</h2>
                 <p class="card-desc">Learn cutting-edge web development!</p>
             </a>
 
             <a href="CodeCrafters.html" class="card">
-                <h2 class="card-title">CodeCrafters: Innovate & Create Competition</h2>
+                <h2 class="card-title">CodeCrafters: Innovate & Create. Competition</h2>
                 <p class="card-desc">Showcase your creativity!</p>
             </a>
 
@@ -48,22 +66,11 @@
                 <p class="card-desc">Compete in an AI debate challenge!</p>
             </a>
         </div>
+        <div class="button-container">
+            <button class="button">Register Now</button>
+        </div>
     </div>
 
-    <script>
-        // Generate Floating Orbs
-        document.addEventListener("DOMContentLoaded", function() {
-            const orbContainer = document.querySelector(".orbs");
-            for (let i = 0; i < 30; i++) {
-                let orb = document.createElement("div");
-                orb.className = "orb";
-                orb.style.left = `${Math.random() * 100}vw`;
-                orb.style.top = `${Math.random() * 100}vh`;
-                orb.style.animationDuration = `${Math.random() * 6 + 4}s`;
-                orbContainer.appendChild(orb);
-            }
-        });
-    </script>
-
+    
 </body>
 </html>
