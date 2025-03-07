@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechHorizonU'25</title>
+    <title>Tech Fest 2025</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,8 +15,7 @@
     <div class="container">
         <!-- Hero Section -->
         <div class="hero">
-            <h2 >Utica University Computer Science Department Presents</h2>
-            <h1 class="title">TechHorizonU'25</h1>
+            <h1 class="title">Welcome to Tech Fest 2025</h1>
             <p class="subtitle">
                 Experience innovation with a Python Quiz, Web Dev Workshop, Build-A-Thon, and AI Panel Discussion!
             </p>
@@ -26,31 +25,51 @@
         <!-- Event Highlights -->
         <div class="grid">
             <a href="python-quiz.html" class="card">
+                <div class="emoji">🐍</div>
                 <h2 class="card-title">PyQuest: The Ultimate Python Challenge</h2>
                 <p class="card-desc">Test your Python skills!</p>
             </a>
 
             <a href="web-dev-workshop.html" class="card">
+                <div class="emoji">🌐</div>
                 <h2 class="card-title">Web Dev Workshop</h2>
                 <p class="card-desc">Learn cutting-edge web development!</p>
             </a>
 
             <a href="build-a-thon.html" class="card">
+                <div class="emoji">🚀</div>
                 <h2 class="card-title">Build-A-Thon</h2>
                 <p class="card-desc">Showcase your creativity!</p>
             </a>
 
             <a href="ai-panel.html" class="card">
+                <div class="emoji">🤖</div>
                 <h2 class="card-title">AI Nexus: AI and the Future of Work</h2>
                 <p class="card-desc">Explore the impact of AI in the workplace.</p>
             </a>
 
             <a href="ai-debate.html" class="card">
+                <div class="emoji">🎤</div>
                 <h2 class="card-title">TechTalks: The Great AI Debate</h2>
                 <p class="card-desc">Compete in an AI debate challenge!</p>
             </a>
         </div>
     </div>
+
+    <script>
+        // Generate Floating Orbs
+        document.addEventListener("DOMContentLoaded", function() {
+            const orbContainer = document.querySelector(".orbs");
+            for (let i = 0; i < 30; i++) {
+                let orb = document.createElement("div");
+                orb.className = "orb";
+                orb.style.left = `${Math.random() * 100}vw`;
+                orb.style.top = `${Math.random() * 100}vh`;
+                orb.style.animationDuration = `${Math.random() * 6 + 4}s`;
+                orbContainer.appendChild(orb);
+            }
+        });
+    </script>
 
 </body>
 </html>
