@@ -52,13 +52,14 @@ body {
 
 .pre-title {
     font-size: 1.3vw;
-    margin-bottom: .25vw;
+    margin: .125vw;
+    padding: .125vw;
 }
 
 .title {
     font-size: 3vw;
     margin: 0;
-    padding 0;
+    padding: 0;
 }
 .subtitle {
     font-size: 1vw;
@@ -112,6 +113,17 @@ body {
     margin: 1vw;
 }
 
+.foot-container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-self: center;
+}
+
+.general-guides-link {
+    color: white;
+    font-size: .5rem;
+}
 /* for home page cards*/
 .card-grid {
     display: grid;
