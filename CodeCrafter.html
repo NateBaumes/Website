@@ -14,7 +14,7 @@
             text-align: left; /* Ensures text is aligned left */
         }
         .container {
-            width: 100%; /* Takes up full width of the screen */
+            width: 100%;
         }
         h1.title {
             font-size: 2.5em;
@@ -35,22 +35,22 @@
             margin-left: 20px;
         }
         .guidelines-rules-container {
-            display: flex; /* Align guidelines and rules side by side */
-            justify-content: space-between; /* Space between the boxes */
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
             flex-wrap: wrap; /* Allow items to wrap on smaller screens */
         }
         .guidelines {
-            width: 48%; /* Ensure both boxes take up approximately half the space */
+            width: 48%;
             border: 1px solid #ccc;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); /* Glowing effect */
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
             transition: box-shadow 0.3s ease-in-out;
-            margin-bottom: 20px; /* Space between boxes */
+            margin-bottom: 20px;
         }
         .guidelines:hover {
-            box-shadow: 0 0 20px rgba(0, 128, 0, 1); /* Glowing effect on hover */
+            box-shadow: 0 0 20px rgba(0, 128, 0, 1);
         }
         .guidelines h2 {
             font-size: 1.5em;
@@ -65,7 +65,7 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 40px; /* Lower the button */
+            margin-top: 40px;
             display: inline-block;
         }
         
@@ -78,11 +78,11 @@
                 font-size: 1.1em;
             }
             .guidelines {
-                width: 100%; /* Make both boxes take full width on smaller screens */
-                margin-bottom: 10px; /* Less space between the boxes */
+                width: 100%;
+                margin-bottom: 10px;
             }
             .button {
-                margin-top: 30px; /* Adjust the margin on smaller screens */
+                margin-top: 30px;
             }
         }
 
@@ -94,13 +94,13 @@
                 font-size: 1em;
             }
             .guidelines-rules-container {
-                flex-direction: column; /* Stack boxes vertically on very small screens */
+                flex-direction: column;
             }
             .guidelines {
-                width: 100%; /* Full width for both boxes */
+                width: 100%;
             }
             .button {
-                margin-top: 20px; /* Adjust button position further */
+                margin-top: 20px;
             }
         }
     </style>
@@ -111,16 +111,15 @@
         <h1 class="title">CodeCrafters: Innovate & Create Competition</h1>
         <p class="subtitle">Compete to solve a real-world problem with your innovative idea!</p>
 
-        <!-- Time & Location at the top -->
+        <!-- Time & Location -->
         <div class="event-details">
             <h2>📅 Date & Location</h2>
             <p><strong>Time:</strong> 2:15 PM - 4:15 PM</p>
             <p><strong>Location:</strong> THURST 205</p>
         </div>
 
-        <!-- Guidelines below each other, left and right aligned -->
+        <!-- Guidelines and Rules -->
         <div class="guidelines-rules-container">
-            <!-- Guidelines Box (left) -->
             <div class="guidelines">
                 <h2>⚠️ Guidelines</h2>
                 <ul>
@@ -132,7 +131,6 @@
                 </ul>
             </div>
 
-            <!-- Rules Box (right) -->
             <div class="guidelines">
                 <h2>🏆 Evaluation & Awards</h2>
                 <ul>
@@ -144,6 +142,12 @@
             </div>
         </div>
 
+        
+        
+        <!-- Register Now Button -->
+        <a href="register.html" class="button">Register Now</a>
+
+        <!-- Back to Home Button -->
         <a href="index.html" class="button">Back to Home</a>
     </div>
 
