@@ -60,7 +60,7 @@ body {
 
 /* Register Button */
 .button {
-    padding: 12px 22px;
+    padding: 24px 44px;
     font-size: 16px;
     font-weight: bold;
     background: #E65300;
@@ -75,6 +75,21 @@ body {
     margin: 12px;
 }
 
+.main-button {
+    padding: 48px 88px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #E65300;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(230, 83, 0, 0.8);
+    display: inline-block;
+    text-decoration: none;
+    margin: 12px;
+}
 .button:hover {
     background: white;
     color: #0C223F;
