@@ -5,106 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCrafters: Innovate & Create. Workshop</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: left; /* Ensures text is aligned left */
-        }
-        .container {
-            width: 100%;
-            display: flex; /* Takes up full width of the screen */
-        }
-        h1.title {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        p.subtitle {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .event-details {
-            margin-bottom: 20px;
-        }
-        .event-details h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .event-details p {
-            margin-left: 20px;
-        }
-        .guidelines-rules-container {
-            display: flex; /* Align guidelines and rules side by side */
-            justify-content: space-between; /* Space between the boxes */
-            margin-top: 20px;
-            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-        }
-        .guidelines {
-            width: 48%; /* Ensure both boxes take up approximately half the space */
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); /* Glowing effect */
-            transition: box-shadow 0.3s ease-in-out;
-            margin-bottom: 20px; /* Space between boxes */
-        }
-        .guidelines:hover {
-            box-shadow: 0 0 20px rgba(0, 128, 0, 1); /* Glowing effect on hover */
-        }
-        .guidelines h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .guidelines ul {
-            margin-left: 20px;
-        }
-        .button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 40px; /* Lower the button */
-            display: inline-block;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1.title {
-                font-size: 2em;
-            }
-            p.subtitle {
-                font-size: 1.1em;
-            }
-            .guidelines {
-                width: 100%; /* Make both boxes take full width on smaller screens */
-                margin-bottom: 10px; /* Less space between the boxes */
-            }
-            .button {
-                margin-top: 30px; /* Adjust the margin on smaller screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1.title {
-                font-size: 1.8em;
-            }
-            p.subtitle {
-                font-size: 1em;
-            }
-            .guidelines-rules-container {
-                flex-direction: column; /* Stack boxes vertically on very small screens */
-            }
-            .guidelines {
-                width: 100%; /* Full width for both boxes */
-            }
-            .button {
-                margin-top: 20px; /* Adjust button position further */
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -113,10 +13,12 @@
         <p class="subtitle">Learn web development and app prototyping!</p>
 
         <!-- Time & Location at the top -->
-        <div class="event-details">
-            <h2>📅 Date & Location</h2>
-            <p><strong>Time:</strong> 1:10 PM - 2:10 PM</p>
-            <p><strong>Location:</strong> THURST 202</p>
+        <div class="event-container">
+            <div class="event-details">
+                <h2>📅 Date & Location</h2>
+                <p><strong>Time:</strong> 1:10 PM - 2:10 PM</p>
+                <p><strong>Location:</strong> THURST 202</p>
+            </div>
         </div>
 
         <!-- Guidelines below each other, left and right aligned -->
@@ -134,9 +36,10 @@
             </div>
         </div>
 
-       
-        <a href="register.html" class="button">Register Now</a> <!-- Register Now Button -->
-        <a href="index.html" class="button">Back to Home</a>
+        <div class="button-container">
+            <a href="register.html" class="button">Register Now</a> <!-- Register Now Button -->
+            <a href="index.html" class="button">Back to Home</a>
+        </div>
 
     </div>
 
