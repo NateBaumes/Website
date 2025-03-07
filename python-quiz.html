@@ -16,6 +16,8 @@
         .container {
             width: 100%;
             display: flex; /* Takes up full width of the screen */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center the content */
         }
         h1.title {
             font-size: 2.5em;
@@ -27,6 +29,7 @@
         }
         .event-details {
             margin-bottom: 20px;
+            width: 100%;
         }
         .event-details h2 {
             font-size: 1.5em;
@@ -40,6 +43,7 @@
             justify-content: space-between; /* Space between the boxes */
             margin-top: 20px;
             flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            width: 100%;
         }
         .guidelines, .rules {
             width: 48%; /* Ensure both boxes take up approximately half the space */
@@ -68,6 +72,26 @@
             border-radius: 5px;
             margin-top: 40px; /* Lower the button */
             display: inline-block;
+        }
+
+        .register-button {
+            padding: 12px 24px;
+            background-color: #E65300; /* Orange background */
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px; /* Add space between sections */
+            box-shadow: 0 0 15px rgba(230, 83, 0, 0.8);
+            transition: 0.3s ease-in-out;
+        }
+
+        .register-button:hover {
+            background-color: white;
+            color: #E65300;
+            transform: scale(1.05);
+            border: 3px solid #E65300;
         }
         
         /* Responsive Design */
@@ -116,7 +140,7 @@
         <div class="event-details">
             <h2>📅 Date & Location</h2>
             <p><strong>Time:</strong> 12:30 PM - 1:00 PM</p>
-            <p><strong>Location:</strong> Room B10</p>
+            <p><strong>Location:</strong> HUBBARD Room B10</p>
         </div>
 
         <!-- Additional Event Details -->
@@ -152,6 +176,9 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Register Now Button -->
+        <a href="registration.html" class="register-button">Register Now</a>
 
         <a href="index.html" class="button">Back to Home</a>
     </div>
