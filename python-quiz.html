@@ -5,38 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PyQuest: The Ultimate Python Challenge</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: left; /* Ensures text is aligned left */
+        }
+        .container {
+            width: 100%;
+            display: flex; /* Takes up full width of the screen */
+        }
+        h1.title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .event-details {
+            margin-bottom: 20px;
+        }
+        .event-details h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .event-details p {
+            margin-left: 20px;
+        }
+        .guidelines-rules-container {
+            display: flex; /* Align guidelines and rules side by side */
+            justify-content: space-between; /* Space between the boxes */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .guidelines, .rules {
+            width: 48%; /* Ensure both boxes take up approximately half the space */
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); /* Glowing effect */
+            transition: box-shadow 0.3s ease-in-out;
+            margin-bottom: 20px; /* Space between boxes */
+        }
+        .guidelines:hover, .rules:hover {
+            box-shadow: 0 0 20px rgba(0, 128, 0, 1); /* Glowing effect on hover */
+        }
+        .guidelines h2, .rules h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .guidelines ul, .rules ul {
+            margin-left: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 40px; /* Lower the button */
+            display: inline-block;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1.title {
+                font-size: 2em;
+            }
+            p.subtitle {
+                font-size: 1.1em;
+            }
+            .guidelines, .rules {
+                width: 100%; /* Make both boxes take full width on smaller screens */
+                margin-bottom: 10px; /* Less space between the boxes */
+            }
+            .button {
+                margin-top: 30px; /* Adjust the margin on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1.title {
+                font-size: 1.8em;
+            }
+            p.subtitle {
+                font-size: 1em;
+            }
+            .guidelines-rules-container {
+                flex-direction: column; /* Stack boxes vertically on very small screens */
+            }
+            .guidelines, .rules {
+                width: 100%; /* Full width for both boxes */
+            }
+            .button {
+                margin-top: 20px; /* Adjust button position further */
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="hero">
-            <h1 class="title">PyQuest: The Ultimate Python Challenge</h1>
-            <p class="subtitle">Test your Python skills in a fast-paced quiz!</p>
-        </div>
+        <h1 class="title">PyQuest: The Ultimate Python Challenge</h1>
+        <p class="subtitle">Test your Python skills in a fast-paced quiz!</p>
 
+        <!-- Time & Location at the top -->
         <div class="event-details">
-            <p><strong>📅 Date & Time:</strong> March 21, 2025 | 12:30 PM - 1:00 PM</p>
-            <p><strong>📍 Location:</strong> Room B10</p>
-            <p><strong>🏆 Prizes:</strong> 1st, 2nd, and 3rd place winners</p>
+            <h2>📅 Date & Location</h2>
+            <p><strong>Time:</strong> 12:30 PM - 1:00 PM</p>
+            <p><strong>Location:</strong> Room B10</p>
         </div>
 
-        <div class="guidelines">
-            <h2>Competition Rules</h2>
-            <ul>
-                <li>The Challenge consists of multiple-choice and coding-related questions.</li>
-                <li>⏰ Participants will have 30 minutes to answer all the questions.</li>
-                <li>🚫 No external help or online searches allowed during the competition.</li>
-                <li>🏆 The highest score will determine the winner, with a tiebreaker round if needed.</li>
-                <li>🎖️ Three winners will be selected for the competition.</li>
-            </ul>
+        <!-- Additional Event Details -->
+        <div class="event-details">
+            <h2>⏳ Challenge Overview</h2>
+            <p><strong>Duration:</strong> 30 minutes</p>
+            <p><strong>Format:</strong> Multiple-choice and coding-related questions</p>
+            <p><strong>Rules:</strong> No external help or online search is allowed during the competition.</p>
+            <p><strong>Winner Determination:</strong> The highest score will determine the winner; a tiebreaker round will be held in case of a tie.</p>
+            <p><strong>Winners:</strong> Three winners will be selected.</p>
+        </div>
 
-            <h2>Important Guidelines</h2>
-            <ul>
-                <li>📝 Register before March 19, 2025.</li>
-                <li>⏰ Arrive 10 minutes before the event starts.</li>
-                <li>❌ No cheating or external assistance allowed.</li>
-                <li>⚖️ The judge’s decision is final.</li>
-            </ul>
+        <!-- Guidelines and Rules below each other, left and right aligned -->
+        <div class="guidelines-rules-container">
+            <!-- Guidelines Box (left) -->
+            <div class="guidelines">
+                <h2>⚠️ Guidelines</h2>
+                <ul>
+                    <li>Participants must register before March 19, 2025.</li>
+                    <li>Arrive 10 minutes before the event starts.</li>
+                    <li>No external help or cheating is allowed.</li>
+                    <li>The judge's decision is final.</li>
+                </ul>
+            </div>
+
+            <!-- Rules Box (right) -->
+            <div class="rules">
+                <h2>📜 Rules</h2>
+                <ul>
+                    <li>Each participant must bring their own device.</li>
+                    <li>Only Python 3.x can be used for the quiz.</li>
+                    <li>No talking or collaboration during the quiz.</li>
+                </ul>
+            </div>
         </div>
 
         <a href="index.html" class="button">Back to Home</a>
