@@ -26,8 +26,11 @@ body {
 
 /* Hero Section */
 
-.nav-bar {
+.navbar {
+    background-color: black;
+    padding: 10px;
     width: 100%;
+    
 }
 
 .hero {
@@ -42,7 +45,12 @@ body {
     margin-bottom: 20px;
 }
 
-.hero p {
+.pre-title {
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.subtitle {
     font-size: 2em;
     margin-bottom: 40px;
 }
