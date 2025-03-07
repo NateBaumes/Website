@@ -3,46 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeCrafters: Innovate & Create Workshop</title>
+    <title>CodeCrafters: Innovate & Create. Workshop</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: left; /* Ensures text is aligned left */
+        }
+        .container {
+            width: 100%;
+            display: flex; /* Takes up full width of the screen */
+        }
+        h1.title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .event-details {
+            margin-bottom: 20px;
+        }
+        .event-details h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .event-details p {
+            margin-left: 20px;
+        }
+        .guidelines-rules-container {
+            display: flex; /* Align guidelines and rules side by side */
+            justify-content: space-between; /* Space between the boxes */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .guidelines {
+            width: 48%; /* Ensure both boxes take up approximately half the space */
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); /* Glowing effect */
+            transition: box-shadow 0.3s ease-in-out;
+            margin-bottom: 20px; /* Space between boxes */
+        }
+        .guidelines:hover {
+            box-shadow: 0 0 20px rgba(0, 128, 0, 1); /* Glowing effect on hover */
+        }
+        .guidelines h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .guidelines ul {
+            margin-left: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 40px; /* Lower the button */
+            display: inline-block;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1.title {
+                font-size: 2em;
+            }
+            p.subtitle {
+                font-size: 1.1em;
+            }
+            .guidelines {
+                width: 100%; /* Make both boxes take full width on smaller screens */
+                margin-bottom: 10px; /* Less space between the boxes */
+            }
+            .button {
+                margin-top: 30px; /* Adjust the margin on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1.title {
+                font-size: 1.8em;
+            }
+            p.subtitle {
+                font-size: 1em;
+            }
+            .guidelines-rules-container {
+                flex-direction: column; /* Stack boxes vertically on very small screens */
+            }
+            .guidelines {
+                width: 100%; /* Full width for both boxes */
+            }
+            .button {
+                margin-top: 20px; /* Adjust button position further */
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="hero">
-            <h1 class="title">CodeCrafters: Innovate & Create Workshop</h1>
-            <p class="subtitle">Learn the essentials of web development and app prototyping!</p>
-        </div>
+        <h1 class="title">CodeCrafters: Innovate & Create. Workshop</h1>
+        <p class="subtitle">Learn web development and app prototyping!</p>
 
+        <!-- Time & Location at the top -->
         <div class="event-details">
-            <p><strong>📅 Date & Time:</strong> March 21, 2025 | 1:10 PM - 2:10 PM</p>
-            <p><strong>📍 Location:</strong> THURST 205</p>
+            <h2>📅 Date & Location</h2>
+            <p><strong>Time:</strong> 1:10 PM - 2:10 PM</p>
+            <p><strong>Location:</strong> Room C202</p>
         </div>
 
-        <div class="guidelines">
-            <h2>Workshop Overview</h2>
-            <p>Join this hands-on workshop to dive into web development and app prototyping. No prior experience required; beginners are welcome!</p>
-
-            <h2>What You’ll Learn</h2>
-            <ul>
-                <li>🌐 Introduction to HTML, CSS, and JavaScript</li>
-                <li>⚡ Basics of Responsive Web Design</li>
-                <li>🔥 Modern Frontend Frameworks Overview</li>
-                <li>🚀 Hands-on Coding and Prototyping Session</li>
-            </ul>
-
-            <h2>Important Guidelines</h2>
-            <ul>
-                <li>📝 Register before March 19, 2025.</li>
-                <li>💻 Bring your own laptop for the coding session, or use the provided systems.</li>
-                <li>⏰ Arrive at least 10 minutes before the session starts.</li>
-                <li>📚 Follow the instructor’s guidance during the workshop.</li>
-            </ul>
-
-            <h2>Surprise Questions</h2>
-            <ul>
-                <li>❓ Surprise questions will be asked during the session, and the winner will receive a prize!</li>
-            </ul>
+        <!-- Guidelines below each other, left and right aligned -->
+        <div class="guidelines-rules-container">
+            <!-- Guidelines Box (left) -->
+            <div class="guidelines">
+                <h2>⚠️ Guidelines</h2>
+                <ul>
+                    <li>Open to all students interested in learning web development and app prototyping.</li>
+                    <li>No prior experience is required; beginners are welcome.</li>
+                    <li>Participants may bring their laptops, but systems will be provided if needed.</li>
+                    <li>Follow the instructor’s guidance throughout the session.</li>
+                </ul>
+            </div>
         </div>
 
         <a href="index.html" class="button">Back to Home</a>
