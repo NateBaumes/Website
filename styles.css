@@ -44,7 +44,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: bold;
     margin: .5rem;
     padding: 0;
@@ -52,12 +52,12 @@ body {
 
 .pre-title {
     font-size: 1.3em;
-    margin-bottom: .5rem;
+    margin-bottom: .25vw;
 }
 
 .subtitle {
     font-size: 2em;
-    margin-bottom: .5rem;
+    margin-bottom: .25vw;
 }
 
 /* Register Button */
@@ -113,6 +113,10 @@ body {
     padding: .5vw;
     border-radius: 12px;
     text-align: center;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     transition: 0.3s ease-in-out;
     border: 2px solid #E65300;
     text-decoration: none;
@@ -121,16 +125,21 @@ body {
 }
 
 .card-title {
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 .card-desc {
-    font-size:.5rem;
+    font-size:.75vw;
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(255, 165, 0, 0.9);
+}
+
+.emoji {
+    font-size: 5vw;
+    filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.9));
 }
 
 .event-container {
