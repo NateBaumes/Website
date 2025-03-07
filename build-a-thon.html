@@ -5,38 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCrafters: Innovate & Create Competition</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: left; /* Ensures text is aligned left */
+        }
+        .container {
+            width: 100%; /* Takes up full width of the screen */
+        }
+        h1.title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .event-details {
+            margin-bottom: 20px;
+        }
+        .event-details h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .event-details p {
+            margin-left: 20px;
+        }
+        .guidelines-rules-container {
+            display: flex; /* Align guidelines and rules side by side */
+            justify-content: space-between; /* Space between the boxes */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .guidelines {
+            width: 48%; /* Ensure both boxes take up approximately half the space */
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); /* Glowing effect */
+            transition: box-shadow 0.3s ease-in-out;
+            margin-bottom: 20px; /* Space between boxes */
+        }
+        .guidelines:hover {
+            box-shadow: 0 0 20px rgba(0, 128, 0, 1); /* Glowing effect on hover */
+        }
+        .guidelines h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .guidelines ul {
+            margin-left: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 40px; /* Lower the button */
+            display: inline-block;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1.title {
+                font-size: 2em;
+            }
+            p.subtitle {
+                font-size: 1.1em;
+            }
+            .guidelines {
+                width: 100%; /* Make both boxes take full width on smaller screens */
+                margin-bottom: 10px; /* Less space between the boxes */
+            }
+            .button {
+                margin-top: 30px; /* Adjust the margin on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1.title {
+                font-size: 1.8em;
+            }
+            p.subtitle {
+                font-size: 1em;
+            }
+            .guidelines-rules-container {
+                flex-direction: column; /* Stack boxes vertically on very small screens */
+            }
+            .guidelines {
+                width: 100%; /* Full width for both boxes */
+            }
+            .button {
+                margin-top: 20px; /* Adjust button position further */
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="hero">
-            <h1 class="title">CodeCrafters: Innovate & Create Competition</h1>
-            <p class="subtitle">Max 3 students per team; individual participation allowed</p>
-        </div>
+        <h1 class="title">CodeCrafters: Innovate & Create Competition</h1>
+        <p class="subtitle">Compete to solve a real-world problem with your innovative idea!</p>
 
+        <!-- Time & Location at the top -->
         <div class="event-details">
-            <p><strong>📅 Date & Time:</strong> March 21, 2025 | 2:15 PM - 4:15 PM</p>
-            <p><strong>📍 Location:</strong> THURST 205</p>
+            <h2>📅 Date & Location</h2>
+            <p><strong>Time:</strong> 2:15 PM - 4:15 PM</p>
+            <p><strong>Location:</strong> THURST 205</p>
         </div>
 
-        <div class="guidelines">
-            <h2>Competition Overview</h2>
-            <p>In this exciting competition, teams (or individuals) will brainstorm and create innovative solutions to a problem statement given at the start of the event.</p>
+        <!-- Guidelines below each other, left and right aligned -->
+        <div class="guidelines-rules-container">
+            <!-- Guidelines Box (left) -->
+            <div class="guidelines">
+                <h2>⚠️ Guidelines</h2>
+                <ul>
+                    <li>Max 3 students per team, individual participation allowed.</li>
+                    <li>A problem statement will be given a day before the event.</li>
+                    <li>Teams must brainstorm and come up with an innovative solution.</li>
+                    <li>Participants must present a website, prototype, and a 5-10 minute presentation.</li>
+                    <li>AI tools like ChatGPT are not allowed for code generation.</li>
+                </ul>
+            </div>
 
-            <h2>What You’ll Present</h2>
-            <ul>
-                <li>🌐 A website presenting your idea and supporting information.</li>
-                <li>⚡ A prototype (wireframe, design, or working model) demonstrating the concept.</li>
-                <li>📢 A 5-10 minute presentation explaining your project and its potential impact.</li>
-            </ul>
-
-            <h2>Competition Guidelines</h2>
-            <ul>
-                <li>⏳ Teams have 2 hours to complete their work.</li>
-                <li>💻 External resources can be used, but plagiarism is strictly prohibited.</li>
-                <li>🏆 Two winners: Grand winner and Innovation Award.</li>
-                <li>🏅 Honorable mentions for Best Website, Best Oral Presentation, and Best Prototype.</li>
-            </ul>
+            <!-- Rules Box (right) -->
+            <div class="guidelines">
+                <h2>🏆 Evaluation & Awards</h2>
+                <ul>
+                    <li>Teams will have 2 hours to complete their project.</li>
+                    <li>Judges will evaluate based on creativity, feasibility, implementation, and presentation.</li>
+                    <li>Two winners: Grand Winner & Innovation Award.</li>
+                    <li>Honorable Mentions for Best Website, Best Presentation, and Best Prototype.</li>
+                </ul>
+            </div>
         </div>
 
         <a href="index.html" class="button">Back to Home</a>
