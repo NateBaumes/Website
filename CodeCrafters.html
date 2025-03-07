@@ -5,105 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCrafters: Innovate & Create Competition</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: left; /* Ensures text is aligned left */
-        }
-        .container {
-            width: 100%;
-        }
-        h1.title {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        p.subtitle {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .event-details {
-            margin-bottom: 20px;
-        }
-        .event-details h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .event-details p {
-            margin-left: 20px;
-        }
-        .guidelines-rules-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-        }
-        .guidelines {
-            width: 48%;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
-            transition: box-shadow 0.3s ease-in-out;
-            margin-bottom: 20px;
-        }
-        .guidelines:hover {
-            box-shadow: 0 0 20px rgba(0, 128, 0, 1);
-        }
-        .guidelines h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .guidelines ul {
-            margin-left: 20px;
-        }
-        .button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 40px;
-            display: inline-block;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1.title {
-                font-size: 2em;
-            }
-            p.subtitle {
-                font-size: 1.1em;
-            }
-            .guidelines {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-            .button {
-                margin-top: 30px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1.title {
-                font-size: 1.8em;
-            }
-            p.subtitle {
-                font-size: 1em;
-            }
-            .guidelines-rules-container {
-                flex-direction: column;
-            }
-            .guidelines {
-                width: 100%;
-            }
-            .button {
-                margin-top: 20px;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -111,15 +12,17 @@
         <h1 class="title">CodeCrafters: Innovate & Create Competition</h1>
         <p class="subtitle">Compete to solve a real-world problem with your innovative idea!</p>
 
-        <!-- Time & Location -->
-        <div class="event-details">
-            <h2>📅 Date & Location</h2>
-            <p><strong>Time:</strong> 2:15 PM - 4:15 PM</p>
-            <p><strong>Location:</strong> THURST 205</p>
+
+        <div class="event-container">
+            <div class="event-details">
+                <h2>📅 Time & Location</h2>
+                <p><strong>Time:</strong> 2:15 PM - 4:15 PM</p>
+                <p><strong>Location:</strong> THURST 205</p>
+            </div>
         </div>
 
-        <!-- Guidelines and Rules -->
         <div class="guidelines-rules-container">
+
             <div class="guidelines">
                 <h2>⚠️ Guidelines</h2>
                 <ul>
@@ -130,7 +33,6 @@
                     <li>AI tools like ChatGPT are not allowed for code generation.</li>
                 </ul>
             </div>
-
             <div class="guidelines">
                 <h2>🏆 Evaluation & Awards</h2>
                 <ul>
@@ -140,16 +42,15 @@
                     <li>Honorable Mentions for Best Website, Best Presentation, and Best Prototype.</li>
                 </ul>
             </div>
+
         </div>
-
         
-        
-        <!-- Register Now Button -->
-        <a href="register.html" class="button">Register Now</a>
+        <div class="button-container">
+            <a href="register.html" class="button">Register Now</a>
 
-        <!-- Back to Home Button -->
-        <a href="index.html" class="button">Back to Home</a>
-    </div>
+            <!-- Back to Home Button -->
+            <a href="index.html" class="button">Back to Home</a>
+        </div>
 
 </body>
 </html>

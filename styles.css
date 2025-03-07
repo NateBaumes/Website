@@ -7,8 +7,7 @@ body {
     color: white;
     text-align: center;
     overflow-x: hidden;
-    display: flex; /* Ensures no horizontal scrolling */
-    justify-content: center; /* Centers the content horizontally */
+
     min-height: 100vh; /* Ensures full height of the viewport */
 }
 
@@ -26,12 +25,16 @@ body {
 
 /* Hero Section */
 
+/* if wanted can add later
+
 .navbar {
-    background-color: black;
-    padding: 10px;
+    background-color: rgb(17, 44, 86);
+    padding: 3%;
+    margin: 0;
     width: 100%;
-    
+    align-items: center;
 }
+*/
 
 .hero {
     max-width: 1600px;
@@ -46,7 +49,7 @@ body {
 }
 
 .pre-title {
-    font-size: 1em;
+    font-size: 1.3em;
     margin-bottom: 40px;
 }
 
