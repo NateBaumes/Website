@@ -159,6 +159,12 @@ body {
     text-align: left;
 }
 
+.guide-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh
+}
 .event-details h2, .guidelines h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
