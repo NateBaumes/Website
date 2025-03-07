@@ -57,7 +57,7 @@ body {
     box-shadow: 0 0 15px rgba(230, 83, 0, 0.8);
     display: inline-block;
     text-decoration: none;
-    margin-top: 20px;
+    margin: 12px;
 }
 
 .button:hover {
@@ -67,7 +67,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Event Cards */
+/* for home page cards*/
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -91,10 +91,7 @@ body {
     box-shadow: 0 0 20px rgba(255, 165, 0, 0.9);
 }
 
-/* Event Page Layout - Side by Side */
 .event-container {
-    display: flex;
-    justify-content: space-between;
     gap: 30px;
     width: 100%;
     max-width: 1200px;
@@ -104,15 +101,32 @@ body {
     flex-wrap: wrap; /* Allows content to wrap in smaller screens */
 }
 
-/* Event Details & Guidelines */
-.event-details, .guidelines {
-    flex: 1;
+.event-details {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
+    width: fit-content;
+    justify-self: center;
+
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
     margin-bottom: 20px;
     text-align: left; /* Aligns text to the left */
+}
+
+.guidelines-rules-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.guidelines {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .event-details h2, .guidelines h2 {

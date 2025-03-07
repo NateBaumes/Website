@@ -5,130 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PyQuest: The Ultimate Python Challenge</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: left; /* Ensures text is aligned left */
-        }
-        .container {
-            width: 100%;
-            display: flex; /* Takes up full width of the screen */
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center the content */
-        }
-        h1.title {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        p.subtitle {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .event-details {
-            margin-bottom: 20px;
-            width: 100%;
-        }
-        .event-details h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .event-details p {
-            margin-left: 20px;
-        }
-        .guidelines-rules-container {
-            display: flex; /* Align guidelines and rules side by side */
-            justify-content: space-between; /* Space between the boxes */
-            margin-top: 20px;
-            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-            width: 100%;
-        }
-        .guidelines, .rules {
-            width: 48%; /* Ensure both boxes take up approximately half the space */
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); /* Glowing effect */
-            transition: box-shadow 0.3s ease-in-out;
-            margin-bottom: 20px; /* Space between boxes */
-        }
-        .guidelines:hover, .rules:hover {
-            box-shadow: 0 0 20px rgba(0, 128, 0, 1); /* Glowing effect on hover */
-        }
-        .guidelines h2, .rules h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-        .guidelines ul, .rules ul {
-            margin-left: 20px;
-        }
-        .button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 40px; /* Lower the button */
-            display: inline-block;
-        }
 
-        .register-button {
-            padding: 12px 24px;
-            background-color: #E65300; /* Orange background */
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 30px; /* Add space between sections */
-            box-shadow: 0 0 15px rgba(230, 83, 0, 0.8);
-            transition: 0.3s ease-in-out;
-        }
-
-        .register-button:hover {
-            background-color: white;
-            color: #E65300;
-            transform: scale(1.05);
-            border: 3px solid #E65300;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1.title {
-                font-size: 2em;
-            }
-            p.subtitle {
-                font-size: 1.1em;
-            }
-            .guidelines, .rules {
-                width: 100%; /* Make both boxes take full width on smaller screens */
-                margin-bottom: 10px; /* Less space between the boxes */
-            }
-            .button {
-                margin-top: 30px; /* Adjust the margin on smaller screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1.title {
-                font-size: 1.8em;
-            }
-            p.subtitle {
-                font-size: 1em;
-            }
-            .guidelines-rules-container {
-                flex-direction: column; /* Stack boxes vertically on very small screens */
-            }
-            .guidelines, .rules {
-                width: 100%; /* Full width for both boxes */
-            }
-            .button {
-                margin-top: 20px; /* Adjust button position further */
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -136,26 +13,24 @@
         <h1 class="title">PyQuest: The Ultimate Python Challenge</h1>
         <p class="subtitle">Test your Python skills in a fast-paced quiz!</p>
 
-        <!-- Time & Location at the top -->
-        <div class="event-details">
-            <h2>📅 Date & Location</h2>
-            <p><strong>Time:</strong> 12:30 PM - 1:00 PM</p>
-            <p><strong>Location:</strong> HUBBARD Room B10</p>
+        <div class="event-container">
+            <div class="event-details">
+                <h2>📅 Date & Location</h2>
+                <p><strong>Time:</strong> 12:30 PM - 1:00 PM</p>
+                <p><strong>Location:</strong> HUBBARD Room B10</p>
+            </div>
         </div>
 
-        <!-- Additional Event Details -->
-        <div class="event-details">
-            <h2>⏳ Challenge Overview</h2>
-            <p><strong>Duration:</strong> 30 minutes</p>
-            <p><strong>Format:</strong> Multiple-choice and coding-related questions</p>
-            <p><strong>Rules:</strong> No external help or online search is allowed during the competition.</p>
-            <p><strong>Winner Determination:</strong> The highest score will determine the winner; a tiebreaker round will be held in case of a tie.</p>
-            <p><strong>Winners:</strong> Three winners will be selected.</p>
-        </div>
-
-        <!-- Guidelines and Rules below each other, left and right aligned -->
         <div class="guidelines-rules-container">
-            <!-- Guidelines Box (left) -->
+
+            <div class="guidelines">
+                <h2>⏳ Challenge Overview</h2>
+                <p><strong>Duration:</strong> 30 minutes</p>
+                <p><strong>Format:</strong> Multiple-choice and coding-related questions</p>
+                <p><strong>Rules:</strong> No external help or online search is allowed during the competition.</p>
+                <p><strong>Winner Determination:</strong> The highest score will determine the winner; a tiebreaker round will be held in case of a tie.</p>
+                <p><strong>Winners:</strong> Three winners will be selected.</p>
+            </div>
             <div class="guidelines">
                 <h2>⚠️ Guidelines</h2>
                 <ul>
@@ -164,10 +39,6 @@
                     <li>No external help or cheating is allowed.</li>
                     <li>The judge's decision is final.</li>
                 </ul>
-            </div>
-
-            <!-- Rules Box (right) -->
-            <div class="rules">
                 <h2>📜 Rules</h2>
                 <ul>
                     <li>Each participant must bring their own device.</li>
@@ -175,13 +46,14 @@
                     <li>No talking or collaboration during the quiz.</li>
                 </ul>
             </div>
+
         </div>
+        
+        <div class="button-container">
+            <a href="registration.html" class="button">Register Now</a>
 
-        <!-- Register Now Button -->
-        <a href="registration.html" class="register-button">Register Now</a>
-
-        <a href="index.html" class="button">Back to Home</a>
-    </div>
+            <a href="index.html" class="button">Back to Home</a>
+        </div>
 
 </body>
 </html>
