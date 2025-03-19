@@ -230,6 +230,29 @@ body {
     font-size: .75em;
 }
 
+.challenge-details li, .guidelines li, p, h2 {
+    margin-bottom: .5em;
+    font-size: .75em;
+}
+
+.challenge-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    width: 40%;
+    justify-self: center;
+    font-size: 1em;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+    margin: 1rem;
+    text-align: left; /* Aligns text to the left */
+}
+
+.challenge-info {
+    color: rgba(255, 165, 0);
+    font-size: 1em;
+}
+
 .orbs {
     position: fixed;
     top: 0;
