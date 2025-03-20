@@ -122,8 +122,14 @@ body {
 
 .general-guides-link {
     color: white;
-    font-size: .5rem;
+    font-size: 1vw;
+    padding: .5vw;
 }
+
+.general-guides-link:hover {
+    transform: scale(1.1);
+}
+
 /* for home page cards*/
 .card-grid {
     display: grid;
@@ -216,10 +222,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh
+    height: 80vh
 }
 .event-details h2, .event-details p {
-    font-size: .75rem;
+    font-size: 1rem;
     margin: .5vw;
 }
 
@@ -227,12 +233,12 @@ body {
 
 .event-details li, .guidelines li {
     margin-bottom: .5em;
-    font-size: .75em;
+    font-size: 1em;
 }
 
 .challenge-details li, .guidelines li, p, h2 {
     margin-bottom: .5em;
-    font-size: .75em;
+    font-size: 1em;
 }
 
 .challenge-details {
@@ -248,9 +254,23 @@ body {
     text-align: left; /* Aligns text to the left */
 }
 
+@keyframes fontSizeShift {
+    0% { font-size: 1.25rem; }
+    50% { font-size: 1.4rem; }
+    100% { font-size: 1.25rem; }
+  }
+
 .challenge-info {
-    color: rgba(255, 165, 0);
-    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-size: 1.25vw;
+    padding: .5vw;
+    
+    font-weight: bold;
+    animation: fontSizeShift 5s infinite ease-in-out;
+}
+
+.challenge-info:hover {
+    transform: scale(1.1);
 }
 
 .orbs {
